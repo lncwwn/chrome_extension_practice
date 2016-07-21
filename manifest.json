@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "HaoWu Assistant",
+    "description": "This extension shows",
+    "version": "1.0",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": ["*://*.taobao.com/*"],
+        "js": ["./js/jquery-3.0.0.min.js", "./js/script.js"]
+    }],
+    "background": {
+        "scripts": ["./js/jquery-3.0.0.min.js", "./js/background.js"]
+    },
+    "permissions": [
+        "activeTab",
+        "background",
+        "webRequest",
+        "notifications",
+        "https://*.taobao.com/*",
+    ]
+}

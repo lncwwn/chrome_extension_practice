@@ -1,0 +1,13 @@
+html,
+body {
+    width: 260px;
+    height: 230px;
+    background-color: #fff;
+    font-size: 1em;
+    font-family: 'Microsoft YaHei', Tahoma, Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+.main-wrapper {
+    padding: 15px;
+}
